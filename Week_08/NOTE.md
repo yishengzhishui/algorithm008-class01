@@ -12,14 +12,13 @@
 2、选择排序（Selection Sort）
 
     def selectionSort(arr):
-      	n = len(arr)
-    		for i in range(): 
-            min_idx = i 
-            for j in range(i+1, n): 
-                if arr[min_idx] > arr[j]: 
-                    min_idx = j 
-    
-            arr[i], arr[min_idx] = arr[min_idx], arr[i]
+        n = len(arr)
+        for i in range(n):
+            min_index = i
+            for j in range(i, n):
+                if arr[min_index] > arr[j]:
+                    min_index = j
+            arr[i], arr[min_index] = arr[min_index], arr[i]
         return arr
 
 
