@@ -37,9 +37,9 @@ for 状态1 in 状态1的所有值：
 
 ```python
 for i in range(n):
-	for k in range(K, 0, -1):
-    for s in [0, 1]:
-      dp[i][k][s] = max(buy, sell, rest)
+    for k in range(K, 0, -1):
+        for s in [0, 1]:
+            dp[i][k][s] = max(buy, sell, rest)
       
  return dp[-1][K][0]
 ```
